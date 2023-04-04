@@ -24,31 +24,31 @@ Não é possivel fazer a pesquisa em japonês.
 Ele mostrará todos os capítulos e irá perguntar "Quais capítulos deseja instalar?", opções de selecionar o(s) capítulo(s):
 
 1. Instalar todos os capítulos:
+
+`todos`
   
-    `todos`
-  
-    Abaixará todos os capítulos.
-  
+Abaixará todos os capítulos.
+
 2. Instalação com intervalo:
 
 `Inicio-fim`
-  
+
 Ex:
-  
+
 `11-17`
-  
+
 Irá instalar do 11 ao 17.
 
 3. Selecionar capítulos específicos
 
 `numeroDoCap,numeroDoCap,numeroDoCap,numeroDoCap,...`
-  
+
 Ex:
-  
+
 `10,20,30,40`
-  
+
 Irá instalar apenas os capítulos 10, 20, 30 e 40.
-  
+
 OBS: As vírgulas com campos vazios não serão instaladas 
 
 
