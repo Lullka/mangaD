@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,24 +20,39 @@ namespace Instalar_mangas
         static bool helpUs = true;
         static string folder = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + @"\mangaS";
 
+        //Mensagem padrão de help:
+        static string helpMessage = "- Pesquisar mangá digite: mangas nomeDomanga\n- Modo de selecionar capítulos:\n       10  - Instala só o capítulo '10'\n       10-13  - Instala o eles e seus instervalos '10,11,12,13'\n       10,20,30  - Instala apenas os capítulos '10,20,30'\n      Todos  - Instala todos os capítulos\n\nAperte Enter para recomeçar";
+        static string versionMessage = "Versão do script: 1.0.0.1";
+
         static async Task Main(string[] args)
         {
             while (helpUs)
             {
                 Console.Clear();
-                Console.WriteLine("======== Execuntando ========");
+                Console.WriteLine("======== Programa iniciado ========\nDigite help para ver os comandos\n");
                 string option = Console.ReadLine();
+                option = option.Replace("-", ""); //Caso escreva -help
 
                 switch (option)
                 {
                     case "help":
                         Console.Clear();
-                        Console.WriteLine("- Pesquisar mangá digite: manga\n- Modo de selecionar capítulos:\n       10  - Instala só o capítulo '10'\n       10-13  - Instala o eles e seus instervalos '10,11,12,13'\n       10,20,30  - Instala apenas os capítulos '10,20,30'\n      Todos  - Instala todos os capítulos\n\nAperte Enter para recomeçar");
+                        Console.WriteLine(helpMessage);
                         Console.ReadLine();
                         break;
-                    case "Help":
+                    case "h":
                         Console.Clear();
-                        Console.WriteLine("- Pesquisar mangá digite: manga\n- Modo de selecionar capítulos:\n       10  - Instala só o capítulo '10'\n       10-13  - Instala o eles e seus instervalos '10,11,12,13'\n       10,20,30  - Instala apenas os capítulos '10,20,30'\n      Todos  - Instala todos os capítulos\n\nAperte Enter para recomeçar");
+                        Console.WriteLine(helpMessage);
+                        Console.ReadLine();
+                        break;
+                    case "version":
+                        Console.Clear();
+                        Console.WriteLine(versionMessage);
+                        Console.ReadLine();
+                        break;
+                    case "v":
+                        Console.Clear();
+                        Console.WriteLine(versionMessage);
                         Console.ReadLine();
                         break;
                     default:
@@ -68,7 +83,7 @@ namespace Instalar_mangas
 
         static async Task SearchManga(string mangaName)
         {
-            string mangaNameFolder = mangaName.Trim(); //Tirar espaços inuteis
+            string mangaNameFolder = mangaName.Trim(); //Tirar espaços inuteis para adicionar + ao campo de pesquisa
             string mangaNameSearch = mangaNameFolder.Replace(" ", "+"); //Colocar + em espaços brancos para a pesquisa
             string chapter = string.Empty;
             bool permission = false;
@@ -81,7 +96,6 @@ namespace Instalar_mangas
             Console.ResetColor();
 
             var doc = wc.Load(searchURL + mangaNameSearch);
-            //System.Diagnostics.Process.Start("chrome.exe", searchURL + mangaNameSearch);
             var mangaGuest = doc.DocumentNode.SelectNodes("//main[@class='box-content box-perfil']/h3");
 
             if (mangaGuest == null)
@@ -233,7 +247,7 @@ namespace Instalar_mangas
                                             }//para finalizar
                                         }
                                     }
-                                }catch(Exception Error)
+                                }catch
                                 {
                                     Console.WriteLine("Escreva por exemplo nessa sintaxe dentro do padrão de escolhas: 20-40");
                                 }
@@ -270,7 +284,7 @@ namespace Instalar_mangas
                                         }//para finalizar
                                     }
                                 }
-                                catch(Exception Error)
+                                catch
                                 {
                                     Console.WriteLine("Escreva por exemplo nessa sintaxe dentro do padrão de escolhas: 10,20,30,40");
                                 }
@@ -310,7 +324,7 @@ namespace Instalar_mangas
                 string nameCap = name;
                 await ImgChapter(link, mangaName, nameCap);
                 await Task.Delay(1000); //para não haver erro por estar muito rapido na requisicão
-            }catch(Exception Error)
+            }catch
             {
                 Console.WriteLine("Erro instalar capítulo/img");
             }
@@ -357,7 +371,7 @@ namespace Instalar_mangas
                 {
                     Directory.CreateDirectory(chapterDir);
                 }
-            }catch(Exception Error)
+            }catch
             {
                 Console.WriteLine("Não foi possivel criar a pasta.");
             }
@@ -379,7 +393,7 @@ namespace Instalar_mangas
 
                 return result;
             }
-            catch (Exception Error)
+            catch
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Não foi possivel formatar.");
