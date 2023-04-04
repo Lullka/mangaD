@@ -1,17 +1,14 @@
 # MangaSharp
 
-### Inspiração em Dmanga de https://github.com/dkeas
+### Inspiração em Dmanga de https://github.com/dkeas. Muitas das opções do criador estão neste script/programa.
 
 
 MangaSharp é um programa/script de Windows feito em C# com o intuito de fazer download de mangas do site Mangahosted.com (Site brasileiro de mangas). Não há um número máximo para mangas ou capitulos. Diga o manga e seus capítulos e sente-se em sua cadeira para ler. Seu métado de pesquisa é Web Scraping
 
-/* #### Atualização
 
-> Alguns bugs resolvidos */
+#* Versão 1.0.0
 
-# Versão 1.0.1
-
-## Utilização
+# Utilização
 
 OBS: o programa/script é executado no console
 No console digite:
