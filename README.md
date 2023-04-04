@@ -21,9 +21,6 @@ Pesquisa o nome de seu manga:
 Não é possivel fazer a pesquisa em japonês.
 
 `キメツ学園!`
-
-Ele mostrará as opções de mangas. Veja se a opção é a desejada.
-
 Ele mostrará todos os capítulos e irá perguntar "Quais capítulos deseja instalar?", opções de selecionar o(s) capítulo(s):
 
 1. Instalar todos os capítulos:
@@ -52,4 +49,4 @@ Ex:
   
 Irá instalar apenas os capítulos 10, 20, 30 e 40.
   
-OBS: As vírgulas com campos vazios não serão 
+OBS: As vírgulas com campos vazios não serão instaladas 
