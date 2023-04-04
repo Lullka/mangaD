@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instalar mangas", "Instalar mangas\Instalar mangas.csproj", "{B33E3DF6-A510-449D-B530-232647F39646}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B33E3DF6-A510-449D-B530-232647F39646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33E3DF6-A510-449D-B530-232647F39646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33E3DF6-A510-449D-B530-232647F39646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33E3DF6-A510-449D-B530-232647F39646}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {227F8EBC-4A00-40A7-85EB-5B952147AB48}
+	EndGlobalSection
+EndGlobal
