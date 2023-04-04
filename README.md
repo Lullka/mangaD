@@ -1,6 +1,6 @@
 # MangaSharp
 
-### Inspiração em Dmanga de https://github.com/dkeas.
+### Inspiração em Dmanga de [dkeas](https://github.com/dkeas).
 ### Muitas das opções do criador estão neste script/programa.
 
 
