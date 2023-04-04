@@ -23,27 +23,27 @@ Ele mostrará todos os capítulos e irá perguntar "Quais capítulos deseja inst
 
 1. Instalar todos os capítulos:
 
-`todos`
+  `todos`
   
 Abaixará todos os capítulos.
 
 2. Instalação com intervalo:
 
-`Inicio-fim`
+  `Inicio-fim`
 
 Ex:
 
-`11-17`
+  `11-17`
 
 Irá instalar do 11 ao 17.
 
 3. Selecionar capítulos específicos
 
-`numeroDoCap,numeroDoCap,numeroDoCap,numeroDoCap,...`
+  `numeroDoCap,numeroDoCap,numeroDoCap,numeroDoCap,...`
 
 Ex:
 
-`10,20,30,40`
+  `10,20,30,40`
 
 Irá instalar apenas os capítulos 10, 20, 30 e 40.
 
