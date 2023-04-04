@@ -9,14 +9,9 @@ MangaSharp é um programa/script de Windows feito em C# com o intuito de fazer d
 
 # Utilização
 
-OBS: o programa/script é executado no console.
-No console digite:
-
-`manga`
-
 Pesquisa o nome de seu manga:
 
-`<NomeDoSeuManga>`
+`mangas <NomeDoSeuManga>`
 
 Não é possivel fazer a pesquisa em japonês.
 
