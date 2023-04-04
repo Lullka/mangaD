@@ -9,6 +9,8 @@ MangaSharp é um programa/script de Windows feito em C# com o intuito de fazer d
 
 # Utilização
 
+OBS: O local padrão de download é `C:\Users\userLogado\Pictures\mangaD`.
+
 Pesquisa o nome de seu manga:
 
 `mangas <NomeDoSeuManga>`
