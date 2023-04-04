@@ -25,9 +25,9 @@ Ele mostrará todos os capítulos e irá perguntar "Quais capítulos deseja inst
 
 1. Instalar todos os capítulos:
   
-`todos`
+    `todos`
   
-Abaixará todos os capítulos.
+    Abaixará todos os capítulos.
   
 2. Instalação com intervalo:
 
