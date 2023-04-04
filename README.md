@@ -9,7 +9,7 @@ MangaSharp é um programa/script de Windows feito em C# com o intuito de fazer d
 
 # Instalação
 
-Faça download do arquivo `executable.rar` e execute o .exe dentro dele.
+Faça download do arquivo `executable.rar` e execute o `.exe` dentro dele.
 
 # Utilização
 
