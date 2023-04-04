@@ -50,3 +50,8 @@ Ex:
 Irá instalar apenas os capítulos 10, 20, 30 e 40.
   
 OBS: As vírgulas com campos vazios não serão instaladas 
+
+
+## License
+
+The script is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
