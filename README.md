@@ -1,6 +1,6 @@
 # MangaSharp - Read bellow
 
-# ⚠️ Alert
+## ⚠️ Alert
 The host `mangaHosted` and `MangaLivre` are offline by copyright. That´s why this application doesn´t work.
 A new application with new hosts is in development. More informations soon
 
