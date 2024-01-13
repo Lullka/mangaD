@@ -1,4 +1,8 @@
-# MangaSharp
+# MangaSharp - Read bellow
+
+# It is not the end
+The host `mangaHosted` and `MangaLivre` are offline by copyright. That´s why this application doesn´t work.
+A new application with new hosts is in development. More informations soon
 
 ### Inspiração em Dmanga de [dkeas](https://github.com/dkeas).
 ### Muitas das opções do criador estão neste script/programa.
